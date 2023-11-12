@@ -1,0 +1,64 @@
+.toggle-switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    --light: #d8dbe0;
+    --dark: #000;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+    transform: scale(0.9);
+  }
+  
+  .toggle-switch .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    background-color: var(--dark);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-switch .switch-label .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .toggle-switch .switch-label .slider {
+    position: absolute;
+    width: 104%;
+    height: 104%;
+    top: -2%;
+    left: -2%;
+    border-radius: 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch .switch-label .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .toggle-switch .switch-label .slider::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 6px -2px 0px 0px var(--light);
+    box-shadow: inset 6px -2px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch .switch-label .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  

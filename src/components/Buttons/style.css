@@ -1,0 +1,44 @@
+.btn-outline{
+  /* border-image: linear-gradient(to right bottom, #F9AF13, #3181B7); */
+  border: 2px solid var(--clr-mainY);
+  transition: all 300ms ease;
+  box-shadow: 0px 0px 8px 1px var(--clr-mainY-l), inset 0px 0px 8px 1px var(--clr-mainY-l);
+  /* background-image: linear-gradient(#000, #000), radial-gradient(circle at right bottom,  #F9AF13, #3181B7);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 2px 0px 10px 0 #3181B760, -2px 0px 10px 0 #F9AF1360, inset 2px 0px 10px 0 #3181B760, inset -2px 0px 10px 0 #F9AF1360; */
+}
+
+.btn-outline:hover{
+  background-color: #11111140;
+}
+.btn-outline:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainY), inset 0px 0px 4px 1px var(--clr-mainY);
+}
+
+.light .btn-outline:hover{
+  background-color: #88888830;
+}
+.light .btn-outline:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainY), inset 0px 0px 4px 1px var(--clr-mainY);
+  background-color: #55555530;
+}
+
+.btn-text{
+  transition: all 300ms ease;
+}
+
+.btn-text:hover{
+  background-color: #11111140;
+}
+.btn-text:active{
+  background-color: #11111180;
+}
+
+.light .btn-text:hover{
+  background-color: #88888830;
+}
+.light .btn-text:active{
+  background-color: #55555530;
+}
+

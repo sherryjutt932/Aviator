@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* tailwind imports */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --clr-bg-dark: #000; /* gray-800 */
+  --clr-bg-light: #fafafa; /* zinc-50 */
+
+  --clr-text-dark: #111; /* gray-200 */
+  --clr-text-light: #fafafa; /* zinc-50 */
+
+  --clr-mainB:#009eff;
+  --clr-mainY:#ff9900;
+  
+  --clr-mainB-l:#58bfff;
+  --clr-mainY-l:#ffb341;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark {
+  color: var(--clr-text-light);
+}
+
+.dark .textbody{
+  color: #7A7A7A;
+}
+
+.light .textbody{
+  color: #7A7A7A;
+}
+
+.light {
+  color: var(--clr-text-dark);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

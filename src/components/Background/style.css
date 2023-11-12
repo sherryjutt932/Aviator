@@ -1,0 +1,60 @@
+.bg-circle {
+  position: fixed;
+  border-radius: 100%;
+  z-index: -2;
+  filter: blur(150px);
+}
+
+.bg-circle:nth-child(1) {
+  width: 872px;
+  height: 872px;
+  right: -20%;
+  top: -10%;
+  background: var(--clr-mainY);
+}
+
+.bg-circle:nth-child(2) {
+  width: 628px;
+  height: 628px;
+  left: -10%;
+  bottom: -30%;
+  transform: translateY(-50%);
+  background: var(--clr-mainB);
+}
+
+.light .bg-circle:nth-child(1){
+  background: var(--clr-mainY-l);
+}
+.light .bg-circle:nth-child(2){
+  background: var(--clr-mainB-l);
+}
+
+.bg-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #00000090;
+  z-index: -1;
+  backdrop-filter: blur(150px);
+  -webkit-backdrop-filter: blur(150px);
+}
+
+.bglight .bg-wrapper {
+  background: #ffffff90;
+}
+
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+  background: var(--clr-bg-dark);
+}
+
+.bglight .bg {
+  background: var(--clr-bg-light);
+}
