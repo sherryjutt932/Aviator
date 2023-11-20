@@ -43,4 +43,29 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* width */
+.customscroller::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+.customscroller::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #3181B720;
+}
+
+/* Handle */
+.customscroller::-webkit-scrollbar-thumb {
+  background: #00000050;
+  transition: all 300ms ease;
+  border-radius: 100vh;
+}
+
+/* Handle on hover */
+.customscroller::-webkit-scrollbar-thumb:hover {
+  background: #00000060;
 }

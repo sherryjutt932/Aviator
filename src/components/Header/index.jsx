@@ -1,8 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/Aviator Logo.png";
 import DarkModeToggle from "../DarkModeToggle";
-import Outline from "../Buttons/Outline";
-import Text from "../Buttons/Text";
+import Nav from "../Nav";
 
 export default function Header({ darkMode, setDarkMode }) {
   return (
@@ -12,10 +11,9 @@ export default function Header({ darkMode, setDarkMode }) {
       <p className="text-3xl font-bold uppercase">Aviator</p>
     </div>
 
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-10">
+      <Nav darkMode={darkMode}/>
       <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Text label="Log in" darkMode={darkMode}/>
-      <Outline label="Sign up" darkMode={darkMode}/>
     </div>
   </div>  
   );

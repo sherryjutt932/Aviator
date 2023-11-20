@@ -1,26 +1,35 @@
-.btn-outline{
+.btn-outline.yellow{
   /* border-image: linear-gradient(to right bottom, #F9AF13, #3181B7); */
   border: 2px solid var(--clr-mainY);
   transition: all 300ms ease;
   box-shadow: 0px 0px 8px 1px var(--clr-mainY-l), inset 0px 0px 8px 1px var(--clr-mainY-l);
-  /* background-image: linear-gradient(#000, #000), radial-gradient(circle at right bottom,  #F9AF13, #3181B7);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow: 2px 0px 10px 0 #3181B760, -2px 0px 10px 0 #F9AF1360, inset 2px 0px 10px 0 #3181B760, inset -2px 0px 10px 0 #F9AF1360; */
+}
+.btn-outline{
+  /* border-image: linear-gradient(to right bottom, #F9AF13, #3181B7); */
+  border: 2px solid var(--clr-mainB);
+  transition: all 300ms ease;
+  box-shadow: 0px 0px 8px 1px var(--clr-mainB-l), inset 0px 0px 8px 1px var(--clr-mainB-l);
 }
 
 .btn-outline:hover{
   background-color: #11111140;
 }
-.btn-outline:active{
+.btn-outline.yellow:active{
   box-shadow: 0px 0px 4px 1px var(--clr-mainY), inset 0px 0px 4px 1px var(--clr-mainY);
+}
+.btn-outline:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainB), inset 0px 0px 4px 1px var(--clr-mainB);
 }
 
 .light .btn-outline:hover{
   background-color: #88888830;
 }
-.light .btn-outline:active{
+.light .btn-outline.yellow:active{
   box-shadow: 0px 0px 4px 1px var(--clr-mainY), inset 0px 0px 4px 1px var(--clr-mainY);
+  background-color: #55555530;
+}
+.light .btn-outline:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainB), inset 0px 0px 4px 1px var(--clr-mainB);
   background-color: #55555530;
 }
 
@@ -42,3 +51,46 @@
   background-color: #55555530;
 }
 
+.btn-filled.yellow{
+  border: 2px solid var(--clr-mainY);
+  background-color: var(--clr-mainY);
+  transition: all 300ms ease;
+  box-shadow: 0px 0px 8px 1px var(--clr-mainY-l), inset 0px 0px 8px 1px var(--clr-mainY-l);
+  color:#fff;
+}
+.btn-filled{
+  border: 2px solid var(--clr-mainB);
+  background-color: var(--clr-mainB);
+  transition: all 300ms ease;
+  box-shadow: 0px 0px 8px 1px var(--clr-mainB-l), inset 0px 0px 8px 1px var(--clr-mainB-l);
+  color:#fff;
+}
+
+.btn-filled.yellow:hover{
+  background-color: var(--clr-mainY-l);
+}
+.btn-filled.yellow:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainY), inset 0px 0px 4px 1px var(--clr-mainY);
+}
+
+.light .btn-filled.yellow:hover{
+  background-color: var(--clr-mainY-l);
+}
+.light .btn-filled.yellow:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainY), inset 0px 0px 4px 1px var(--clr-mainY);
+}
+
+
+.btn-filled:hover{
+  background-color: var(--clr-mainB-l);
+}
+.btn-filled:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainB), inset 0px 0px 4px 1px var(--clr-mainB);
+}
+
+.light .btn-filled:hover{
+  background-color: var(--clr-mainB-l);
+}
+.light .btn-filled:active{
+  box-shadow: 0px 0px 4px 1px var(--clr-mainB), inset 0px 0px 4px 1px var(--clr-mainB);
+}

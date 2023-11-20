@@ -19,7 +19,7 @@ export default function NavItem({ data, index }) {
         <span className="aspect-square  w-[20px] xl:w-[25px] border-2 border-mainB text-mainB rounded-full text-xs xl:text-sm font-semibold flex justify-center items-center">
           {index+1}
         </span>
-        <span className="text-sm xl:text-base font-medium tracking-wider" >{data.label}</span>
+        <span className="whitespace-nowrap text-sm xl:text-base font-medium tracking-wider" >{data.label}</span>
       </Link>
     </li>
   );
