@@ -3,7 +3,7 @@ import bridge from "../../assets/images/bridge.png";
 
 export default function Skybridge() {
   return (
-    <div className="h-full flex items-center 2xl:pr-20 gap-5 2xlgap-12">
+    <div className="h-full flex items-center flex-col sm:flex-row 2xl:pr-20 gap-5 2xlgap-12">
       <div className="flex-1 basis-1/2 flex flex-col gap-4">
         <div className="flex gap-4 items-center">
           <div className="h-[30px] 2xl:h-[40px] w-[3px] bg-mainB rounded-sm"></div>
@@ -15,7 +15,7 @@ export default function Skybridge() {
           marketers, and advisors; we aim to empower our DAO voters and explore
           new innovative technologies.
         </p>
-        <img className="block w-full max-w-[60%] 2xl:max-w-[80%]" src={bridge} alt="" />
+        <img className="block w-full sm:max-w-[60%] 2xl:max-w-[80%]" src={bridge} alt="" />
       </div>
       <div className="flex-1 basis-1/2 flex flex-col gap-5 ">
       <div className="flex flex-col w-fit">

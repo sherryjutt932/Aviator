@@ -16,6 +16,21 @@
     z-index: -1;
 }
 
+@media (max-width:450px){
+    .footerCon::before{
+        background-color: #00000080;
+        box-shadow: inset 0 0 10px 0px var(--clr-mainY);
+    border: 2px solid var(--clr-mainY);
+    backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+        
+    }
+    
+    .light .footerCon::before{
+        background-color: #ffffff80;
+    }
+}
+
 .footerCon::after{
     content: "";
     position: absolute;

@@ -12,8 +12,8 @@ export default function Tokenomics({darkMode}) {
   }, [darkMode]);
 
   return (
-    <div className="h-full flex items-center">
-      <div className="w-[70%] flex flex-col gap-4">
+    <div className="h-full flex items-center flex-col-reverse sm:flex-row gap-10 sm:gap-0">
+      <div className="w-full sm:w-[70%] flex flex-col gap-4">
         <div className=" flex gap-4 items-center">
           <div className="h-[30px] 2xl:h-[40px] w-[3px] bg-mainB rounded-sm"></div>
           <p className="uppercase text-xl 2xl:text-3xl">welcome</p>
@@ -30,7 +30,7 @@ export default function Tokenomics({darkMode}) {
           <Table darkMode={darkMode} />
         </div>
       </div>
-      <div className="w-[40%] min-w-[450px] max-w-[600px]">
+      <div className="w-[115%] max-w-[420px] sm:w-[40%] sm:min-w-[450px] sm:max-w-[600px]">
         <Piechart key={key} data={data} darkMode={darkMode} />
         {/* <Donutchart/> */}
       </div>

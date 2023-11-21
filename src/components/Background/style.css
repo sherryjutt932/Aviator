@@ -6,17 +6,19 @@
 }
 
 .bg-circle:nth-child(1) {
-  width: 872px;
-  height: 872px;
+  width: 45vw;
+  min-width: 300px;
+  aspect-ratio: 1;
   right: -20%;
-  top: -10%;
+  top: -20%;
   background: var(--clr-mainY);
 }
 
 .bg-circle:nth-child(2) {
-  width: 628px;
-  height: 628px;
-  left: -10%;
+  width: 30vw;
+  min-width: 300px;
+  aspect-ratio: 1;
+  left: -20%;
   bottom: -30%;
   transform: translateY(-50%);
   background: var(--clr-mainB);

@@ -20,7 +20,7 @@ export default function AviatorArcade({darkMode}) {
 
   return (
     <div className="h-full flex flex-col gap-6">
-      <div className={`${darkMode?' bg-[#3181B725] border-[#00000020]':'bg-[#3181B715] border-[#ffffff20]'} w-full flex justify-between rounded-xl p-3 border`}>
+      <div className={`${darkMode?' bg-[#3181B725] border-[#00000020]':'bg-[#3181B715] border-[#ffffff20]'} w-full flex justify-between rounded-xl p-3 border sm:flex-row flex-col-reverse gap-4`}>
         <select
           type="text"
           className={`${darkMode?'border-[#00000020] bg-[#00000010]':'border-[#ffffff20] bg-[#ffffff10]'} border  py-[6px] px-[10px] rounded-lg`}
@@ -41,7 +41,7 @@ export default function AviatorArcade({darkMode}) {
           })}
         </select>
 
-        <div className="flex gap-1">
+        <div className="flex gap-1 ">
           <input
             type="text"
             className= {`${darkMode?'bg-[#00000010] border-[#00000020]':'bg-[#ffffff10] border-[#ffffff20]'}   border py-[6px] px-[10px] rounded-lg`}
@@ -54,7 +54,7 @@ export default function AviatorArcade({darkMode}) {
       </div>
 
       <div className="flex flex-col gap-6 pr-3 overflow-y-auto customscroller">
-      <div className="flex gap-5 w-full">
+      <div className="flex gap-5 w-full  sm:flex-row flex-col">
         <div className="flex-1 basis-1/3 ">
           <img
             className="block w-full h-full object-cover aspect-[5/3] rounded-[30px]"
@@ -69,7 +69,7 @@ export default function AviatorArcade({darkMode}) {
               return (
                 <img
                   key={i}
-                  className="w-[250px] xl:w-[350px] aspect-[5/3] object-cover"
+                  className="w-[45%] flex-grow sm:flex-grow-0 sm:w-[250px] xl:w-[350px] aspect-[5/3] object-cover"
                   src={item}
                   alt="latest pic"
                 />

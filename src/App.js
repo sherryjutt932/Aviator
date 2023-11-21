@@ -22,12 +22,12 @@ function App() {
 
   return (
     <Router>
-      <main className={`w-full ${!darkMode ? "dark" : "light"}`}>
+      <main className={`w-full overflow-x-hidden ${!darkMode ? "dark" : "light"}`}>
       <Background darkMode={darkMode}/>
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
       {/* <Nav darkMode={darkMode}/> */}
       
-      <section className="h-fit px-12 xl:px-24 pt-[50px] pb-[100px]">
+      <section className="h-fit px-6 sm:px-12 xl:px-24 pt-6 sm:pt-[50px] sm:pb-[100px] pb-[130px]">
       <Routes>
         <Route path="/" element={<AboutAviator />} />
         <Route path="/Tokenomics" element={<Tokenomics darkMode={darkMode} />} />

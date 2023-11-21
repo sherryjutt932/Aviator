@@ -6,13 +6,13 @@ import Filled from "../../components/Buttons/Filled";
 
 export default function Flightpaper({darkMode}) {
   return (
-    <div className="h-full flex items-center 2xl:pr-20">
-      <div className="flex-1 basis-2/3 flex flex-col gap-4">
+    <div className="h-full flex sm:flex-row flex-col items-center 2xl:pr-20 gap-10 sm:gap-0">
+      <div className="flex-1 sm:basis-2/3 flex flex-col gap-4">
         <div className="flex gap-4 items-center">
           <div className="h-[30px] 2xl:h-[40px] w-[3px] bg-mainB rounded-sm"></div>
           <p className="uppercase text-xl 2xl:text-3xl">Flight</p>
         </div>
-        <h1 className="uppercase text-7xl 2xl:text-9xl  font-bold leading-none -tracking-wide">
+        <h1 className="uppercase text-5xl sm:text-7xl 2xl:text-9xl font-bold leading-none -tracking-wide">
           Paper
         </h1>
         <p className="max-w-xl 2xl:max-w-4xl text-base 2xl:text-xl textbody">
@@ -39,7 +39,7 @@ export default function Flightpaper({darkMode}) {
           </li>
         </ul>
 
-        <div className="flex pt-5 gap-5">
+        <div className="flex pt-5 gap-5 flex-wrap">
         <Text label="View" darkMode={darkMode}/>
         <Outline label="Get Detail" darkMode={darkMode}/>
         <Filled label="Start" darkMode={darkMode}/>
@@ -49,7 +49,7 @@ export default function Flightpaper({darkMode}) {
         </div>
 
       </div>
-      <div className="flex-1 basis-1/3 ">
+      <div className="flex-1 sm:basis-1/3 w-full">
         <img className="block w-full" src={game} alt="" />
       </div>
     </div>

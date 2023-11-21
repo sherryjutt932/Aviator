@@ -4,7 +4,11 @@ import TableData from "./TableData";
 
 export default function Table({darkMode}) {
   return (
-    <div className={darkMode?"p-5 w-auto rounded-2xl bg-[#3181B725] max-h-[45vh] overflow-y-scroll customscroller max-w-[900px]":"p-5 w-auto rounded-2xl bg-[#3181B715] max-h-[45vh] overflow-y-scroll customscroller max-w-[900px]"}>
+    <div className={`${
+      darkMode?'bg-[#3181B725]':'bg-[#3181B715]'
+    } p-5 w-[calc(100vw-48px)] sm:w-auto rounded-2xl h-fit sm:max-h-[45vh] sm:overflow-y-scroll customscroller max-w-[900px]`}>
+        
+        <div className='max-w-full w-full overflow-x-scroll'>
         <table className="border-collapse w-full">
   <thead >
     <tr >
@@ -26,6 +30,7 @@ export default function Table({darkMode}) {
     
   </tbody>
 </table>
+        </div>
     </div>
   )
 }
