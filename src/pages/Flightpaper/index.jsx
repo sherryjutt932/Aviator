@@ -6,7 +6,7 @@ import Filled from "../../components/Buttons/Filled";
 
 export default function Flightpaper({darkMode}) {
   return (
-    <div className="h-full flex sm:flex-row flex-col items-center 2xl:pr-20 gap-10 sm:gap-0">
+    <div className="h-full w-full  flex sm:flex-row flex-col items-center 2xl:pr-20 gap-10 sm:gap-0">
       <div className="flex-1 sm:basis-2/3 flex flex-col gap-4">
         <div className="flex gap-4 items-center">
           <div className="h-[30px] 2xl:h-[40px] w-[3px] bg-mainB rounded-sm"></div>

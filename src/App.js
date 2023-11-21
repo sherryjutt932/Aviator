@@ -27,7 +27,7 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
       {/* <Nav darkMode={darkMode}/> */}
       
-      <section className="h-fit px-6 sm:px-12 xl:px-24 pt-6 sm:pt-[50px] sm:pb-[100px] pb-[130px]">
+      <section className="h-full flex items-center min-h-[calc(100vh-100px)] px-6 sm:px-12 xl:px-24 pt-6 sm:pt-[0px] sm:pb-[100px] pb-[130px]">
       <Routes>
         <Route path="/" element={<AboutAviator />} />
         <Route path="/Tokenomics" element={<Tokenomics darkMode={darkMode} />} />

@@ -19,7 +19,7 @@ export default function AviatorArcade({darkMode}) {
   };
 
   return (
-    <div className="h-full flex flex-col gap-6">
+    <div className="h-full w-full flex flex-col gap-6">
       <div className={`${darkMode?' bg-[#3181B725] border-[#00000020]':'bg-[#3181B715] border-[#ffffff20]'} w-full flex justify-between rounded-xl p-3 border sm:flex-row flex-col-reverse gap-4`}>
         <select
           type="text"

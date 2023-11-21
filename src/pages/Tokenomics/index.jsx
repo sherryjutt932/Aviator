@@ -12,7 +12,7 @@ export default function Tokenomics({darkMode}) {
   }, [darkMode]);
 
   return (
-    <div className="h-full flex items-center flex-col-reverse sm:flex-row gap-10 sm:gap-0">
+    <div className="h-full w-full  flex items-center flex-col-reverse sm:flex-row gap-10 sm:gap-0">
       <div className="w-full sm:w-[70%] flex flex-col gap-4">
         <div className=" flex gap-4 items-center">
           <div className="h-[30px] 2xl:h-[40px] w-[3px] bg-mainB rounded-sm"></div>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function AboutAviator() {
   const imgArray = [home1, home2, home3];
   return (
-    <div className="h-full flex flex-col sm:flex-row items-center 2xl:pr-20">
+    <div className="h-full w-full flex flex-col sm:flex-row items-center justify-center 2xl:pr-20">
       <div className="flex-1 basis-2/3 flex flex-col gap-4">
         <div className="flex gap-4 items-center">
           <div className="h-[30px] 2xl:h-[40px] w-[3px] bg-mainB rounded-sm"></div>

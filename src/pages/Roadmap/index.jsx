@@ -5,7 +5,7 @@ import fox from "../../assets/images/fox on rocket.png";
 
 export default function Roadmap() {
   return (
-    <div className="h-full py-5 pb-0 grid grid-cols-8 grid-rows-8 gap-5">
+    <div className="h-full w-full  py-5 pb-0 grid grid-cols-8 grid-rows-8 gap-5">
       
       <div className=" h-full col-span-8 sm:col-span-2 row-span-8 flex flex-col justify-center gap-5">
         <div className="basis-[calc(66%-00px)] p-5 flex items-center">
